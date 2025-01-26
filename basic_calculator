@@ -1,0 +1,21 @@
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+def divide(n1, n2):
+    return n1 / n2
+
+operations = {"+":add, "-":subtract, "*":multiply, "/":divide}
+cal_continue = True
+
+while cal_continue:
+        
+    num1 = int(input("What is the first number?: "))
+    oper = input("What is the operator?: ")
+    num2 = int(input("What is the second number?: "))
+    print(operations[oper](num1,num2))
